@@ -1,32 +1,12 @@
 @import "tailwindcss";
-
-/* Iran Yekan Font */
-@font-face {
-  font-family: 'IranYekan';
-  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/iran-yekan@v8.1.4/dist/IranYekan.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'IranYekan';
-  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/iran-yekan@v8.1.4/dist/IranYekanBold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'IranYekan';
-  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/iran-yekan@v8.1.4/dist/IranYekanMedium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+@import "@fontsource/vazirmatn/400.css";
+@import "@fontsource/vazirmatn/500.css";
+@import "@fontsource/vazirmatn/700.css";
 
 :root {
   --background: #f8fafc;
   --foreground: #0f172a;
-  --font-primary: 'IranYekan', 'Tahoma', 'Arial', sans-serif;
+  --font-primary: 'Vazirmatn', 'Tahoma', sans-serif;
 }
 
 @theme inline {
@@ -35,7 +15,7 @@
   --font-sans: var(--font-primary);
 }
 
-* {
+*, *::before, *::after {
   font-family: var(--font-primary) !important;
 }
 
@@ -43,11 +23,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-primary);
-}
-
-/* Persian number rendering */
-input, textarea, select {
-  font-family: var(--font-primary) !important;
 }
 
 /* Smooth scrollbar */
