@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+export const revalidate = 30
 import { Topbar } from '@/components/layout/topbar'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
